@@ -16,6 +16,11 @@ class StudentController extends Controller
         if($student){
             return "add successfully";
         }
-    
-}
+    }
+    function list(){
+
+        $data = Student::all();
+
+        return view('listStudent',['students'=>$data]);
+    }
 }
