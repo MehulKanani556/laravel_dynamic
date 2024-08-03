@@ -8,6 +8,7 @@
         <th>Email</th>
         <th>Phone</th>
         <th>Created At</th>
+        <th>Action</th>
     </tr>
   @foreach ($students as $stud)
       <tr>
@@ -15,6 +16,7 @@
         <td>{{ $stud->email }}</td>
         <td>{{ $stud->phone }}</td>
         <td>{{ $stud->created_at }}</td>
+        <td><a href="{{ 'delete/'.$stud->id }}">Delete</a></td>
       </tr>
   @endforeach
 
@@ -36,7 +38,7 @@
     tr:nth-child(even) {background-color: #f2f2f2;}
     tr:hover {background-color: #ddd;}
     th {background-color: #4CAF50; color: white;}
-    
+
     
 
 

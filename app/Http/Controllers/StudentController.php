@@ -14,7 +14,7 @@ class StudentController extends Controller
         $student->phone = $req->phone;
         $student->save();
         if($student){
-            return "add successfully";
+            return redirect( "list");
         }
     }
     function list(){
@@ -22,5 +22,13 @@ class StudentController extends Controller
         $data = Student::all();
 
         return view('listStudent',['students'=>$data]);
+    }
+
+    function delete($id){
+        $isDeleted = Student::destroy($id);
+        if($isDeleted){
+            return redirect( "list");
+
+        }
     }
 }
