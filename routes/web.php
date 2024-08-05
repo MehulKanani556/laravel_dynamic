@@ -19,3 +19,4 @@ Route::get('edit/{id}',[StudentController::class,'edit']);
 Route::put('edit-student/{id}',[StudentController::class,'editStudent']);
 
 Route::get('search',[StudentController::class,'search']);
+Route::post('deletMulti',[StudentController::class,'deleteMulti']);
