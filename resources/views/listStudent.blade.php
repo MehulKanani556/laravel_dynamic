@@ -8,7 +8,7 @@
         <th>Email</th>
         <th>Phone</th>
         <th>Created At</th>
-        <th>Action</th>
+        <th colspan="2">Action</th>
     </tr>
   @foreach ($students as $stud)
       <tr>
@@ -17,6 +17,7 @@
         <td>{{ $stud->phone }}</td>
         <td>{{ $stud->created_at }}</td>
         <td><a href="{{ 'delete/'.$stud->id }}">Delete</a></td>
+        <td><a href="{{ 'edit/'.$stud->id }}">Edit</a></td>
       </tr>
   @endforeach
 
