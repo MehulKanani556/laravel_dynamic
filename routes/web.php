@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\ImageController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,3 +21,8 @@ Route::put('edit-student/{id}',[StudentController::class,'editStudent']);
 
 Route::get('search',[StudentController::class,'search']);
 Route::post('deletMulti',[StudentController::class,'deleteMulti']);
+
+
+Route::view('upload','upload');
+Route::post('upload',[ImageController::class,'upload']);
+Route::get('imageList',[ImageController::class,'list']);

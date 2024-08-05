@@ -8,7 +8,7 @@
 <form action="deletMulti" method="post">
     @csrf
     <input type="submit" value="Delete Selected">
-   <table border="1">
+   <table >
     <tr>
         <th>Selection</th>
         <th>Name</th>
