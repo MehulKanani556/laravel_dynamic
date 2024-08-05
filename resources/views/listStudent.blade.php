@@ -25,6 +25,7 @@
   @endforeach
 
    </table>
+   {{ $students->links() }}
 </div>
 <style>
     th,td{
@@ -44,8 +45,56 @@
     tr:nth-child(even) {background-color: #5b4444;}
     tr:hover {background-color: #ddd;}
     th {background-color: #4CAF50; color: white;}
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #333;
+            color: #fff;
+        }
+        table {
+            background-color: #222;
+        }
+        th, td {
+            color: #fff;
+        }
+        h1 {
+            color: #fff;
+        }
+    }
+    .w-5.h-5{
+        width: 25px;
+        overflow: hidden;
+        background-image: url('{{ asset('images/student.jpg') }}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background-color 0.3s ease-in-out;
+        
+        margin: 5px;
+        cursor: pointer;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: background-color 0.3s ease-in-out;
+        border: none;
+        padding: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        display: inline-block;
 
+    }
+    
+    /* Hover effect */
+    @media (hover: hover) {
+       .w-5.h-5:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+</style>
 
-
-
+    
 </style>

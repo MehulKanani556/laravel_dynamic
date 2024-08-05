@@ -19,7 +19,7 @@ class StudentController extends Controller
     }
     function list(){
 
-        $data = Student::all();
+        $data = Student::paginate(2);
 
         return view('listStudent',['students'=>$data]);
     }
