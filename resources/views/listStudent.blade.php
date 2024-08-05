@@ -1,7 +1,10 @@
 <div>
     <h1>Student List</h1>
 
-
+<form action="search" method="get">
+    <input type="text" name="search" placeholder="Search Student" value="{{ @$search }}">
+    <input type="submit" value="Search">
+</form>
    <table border="1">
     <tr>
         <th>Name</th>
@@ -32,15 +35,16 @@
     }
     h1{
         text-align: center;
-    }
-    body{
-        font-family: Arial, sans-serif;
-    }
-    tr:nth-child(even) {background-color: #f2f2f2;}
+    }    
+    body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+    tr:nth-child(even) {background-color: #5b4444;}
     tr:hover {background-color: #ddd;}
     th {background-color: #4CAF50; color: white;}
 
-    
 
 
 
