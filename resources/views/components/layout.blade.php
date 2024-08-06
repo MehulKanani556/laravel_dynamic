@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title }}</title>
+    <link rel="stylesheet" href="css/style.css">
+<script src="js/custom.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
         }
        .header {
         background-color: #333;
-            color: #fff;
+            
             padding: 10px;
         }
        .header ul {
@@ -100,7 +102,7 @@
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="header heading">
         <ul>
             <li>
                 <a href="">Home</a>

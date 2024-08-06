@@ -32,3 +32,4 @@ Route::get('imageList',[ImageController::class,'list']);
 
 Route::view('about','about');
 Route::view('home','home');
+Route::view('admin','admin');
