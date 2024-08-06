@@ -26,3 +26,9 @@ Route::post('deletMulti',[StudentController::class,'deleteMulti']);
 Route::view('upload','upload');
 Route::post('upload',[ImageController::class,'upload']);
 Route::get('imageList',[ImageController::class,'list']);
+
+
+
+
+Route::view('about','about');
+Route::view('home','home');
